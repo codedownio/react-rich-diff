@@ -1,3 +1,4 @@
+const PropTypes = require('prop-types');
 const React = require('react');
 
 /**
@@ -6,8 +7,8 @@ const React = require('react');
  */
 const ImageNode = React.createClass({
     propTypes: {
-        attributes: React.PropTypes.object.isRequired,
-        node:       React.PropTypes.object.isRequired
+        attributes: PropTypes.object.isRequired,
+        node:       PropTypes.object.isRequired
     },
 
     render() {

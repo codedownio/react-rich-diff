@@ -1,3 +1,4 @@
+const PropTypes = require('prop-types');
 const React = require('react');
 
 /**
@@ -6,8 +7,8 @@ const React = require('react');
  */
 const TableNode = React.createClass({
     propTypes: {
-        attributes: React.PropTypes.object.isRequired,
-        children:   React.PropTypes.node.isRequired
+        attributes: PropTypes.object.isRequired,
+        children:   PropTypes.node.isRequired
     },
 
     render() {

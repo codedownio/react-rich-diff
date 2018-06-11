@@ -1,3 +1,4 @@
+const PropTypes = require('prop-types');
 const React = require('react');
 const classNames = require('classnames');
 const diffToTitle = require('./diffToTitle');
@@ -19,10 +20,10 @@ const CRITERIAS = [
  */
 const LinkNode = React.createClass({
     propTypes: {
-        attributes: React.PropTypes.object.isRequired,
-        node:       React.PropTypes.object.isRequired,
-        original:   React.PropTypes.object,
-        children:   React.PropTypes.node
+        attributes: PropTypes.object.isRequired,
+        node:       PropTypes.object.isRequired,
+        original:   PropTypes.object,
+        children:   PropTypes.node
     },
 
     render() {

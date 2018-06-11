@@ -1,3 +1,4 @@
+const PropTypes = require('prop-types');
 const React = require('react');
 const Changes = require('./Changes');
 
@@ -7,9 +8,9 @@ const Changes = require('./Changes');
  */
 const RichDiff = React.createClass({
     propTypes: {
-        className: React.PropTypes.string,
-        state:     React.PropTypes.object.isRequired,
-        minToWrap: React.PropTypes.number
+        className: PropTypes.string,
+        state:     PropTypes.object.isRequired,
+        minToWrap: PropTypes.number
     },
 
     getDefaultProps() {

@@ -1,3 +1,4 @@
+const PropTypes = require('prop-types');
 const React = require('react');
 const classNames = require('classnames');
 const { BLOCKS } = require('markup-it');
@@ -30,10 +31,10 @@ const CRITERIAS = [
  */
 const HeadingNode = React.createClass({
     propTypes: {
-        original:   React.PropTypes.object,
-        attributes: React.PropTypes.object.isRequired,
-        node:       React.PropTypes.object.isRequired,
-        children:   React.PropTypes.node.isRequired
+        original:   PropTypes.object,
+        attributes: PropTypes.object.isRequired,
+        node:       PropTypes.object.isRequired,
+        children:   PropTypes.node.isRequired
     },
 
     render() {

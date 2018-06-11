@@ -1,3 +1,4 @@
+const PropTypes = require('prop-types');
 const React = require('react');
 const { List } = require('immutable');
 
@@ -16,7 +17,7 @@ function classNameForChange(node, change) {
  */
 const IdenticalChange = React.createClass({
     propTypes: {
-        change: React.PropTypes.object.isRequired
+        change: PropTypes.object.isRequired
     },
 
     render() {
@@ -31,7 +32,7 @@ const IdenticalChange = React.createClass({
  */
 const AddedRemovedChange = React.createClass({
     propTypes: {
-        change: React.PropTypes.object.isRequired
+        change: PropTypes.object.isRequired
     },
 
     render() {
@@ -53,7 +54,7 @@ const AddedRemovedChange = React.createClass({
  */
 const ModifiedChange = React.createClass({
     propTypes: {
-        change: React.PropTypes.object.isRequired
+        change: PropTypes.object.isRequired
     },
 
     render() {
@@ -83,7 +84,7 @@ const ModifiedChange = React.createClass({
  */
 const Change = React.createClass({
     propTypes: {
-        change: React.PropTypes.object.isRequired
+        change: PropTypes.object.isRequired
     },
 
     render() {
@@ -111,7 +112,7 @@ const Change = React.createClass({
  */
 const ToggableGroup = React.createClass({
     propTypes: {
-        changes: React.PropTypes.object.isRequired
+        changes: PropTypes.object.isRequired
     },
 
     getInitialState() {
@@ -153,9 +154,9 @@ const ToggableGroup = React.createClass({
  */
 const Changes = React.createClass({
     propTypes: {
-        changes:   React.PropTypes.object.isRequired,
-        Wrapper:   React.PropTypes.func,
-        minToWrap: React.PropTypes.number
+        changes:   PropTypes.object.isRequired,
+        Wrapper:   PropTypes.func,
+        minToWrap: PropTypes.number
     },
 
     render() {

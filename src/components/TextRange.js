@@ -1,3 +1,4 @@
+const PropTypes = require('prop-types');
 const React = require('react');
 const schema = require('../schema');
 
@@ -7,8 +8,8 @@ const schema = require('../schema');
  */
 const TextRange = React.createClass({
     propTypes: {
-        range:      React.PropTypes.object.isRequired,
-        attributes: React.PropTypes.object
+        range:      PropTypes.object.isRequired,
+        attributes: PropTypes.object
     },
 
     getDefaultProps() {
