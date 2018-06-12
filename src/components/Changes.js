@@ -107,10 +107,10 @@ const Change = React.createClass({
 });
 
 /**
- * Wrap identitcal changes in a toggable div.
+ * Wrap identical changes in a toggleable div.
  * @type {React}
  */
-const ToggableGroup = React.createClass({
+const ToggleableGroup = React.createClass({
     propTypes: {
         changes: PropTypes.object.isRequired
     },
@@ -132,11 +132,7 @@ const ToggableGroup = React.createClass({
         const { visible } = this.state;
 
         if (!visible) {
-            return (
-                <div className="RichDiff-ToggableGroup" onClick={this.onClick}>
-                    <i className="octicon octicon-unfold"></i>
-                </div>
-            );
+            return (<div></div>);
         }
 
         return (
@@ -166,7 +162,7 @@ const Changes = React.createClass({
         return (
              <Wrapper>
                  {groups.map((change, i) => List.isList(change) ? (
-                     <ToggableGroup key={i} changes={change} />
+                     <ToggleableGroup key={i} changes={change} />
                  ) : (
                      <Change key={change.key} change={change} />
                  ))}
